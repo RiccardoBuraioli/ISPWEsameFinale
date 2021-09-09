@@ -1,12 +1,13 @@
+package esamePackage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class mainClass {
-    private static final Logger logger = LoggerFactory.getLogger(mainClass.class);
+public class MainClass {
+    private static final Logger logger = LoggerFactory.getLogger(MainClass.class);
     private ComponentInterface contents;
 	
-    public mainClass(ComponentInterface contents) {
+    public MainClass(ComponentInterface contents) {
     	this.contents = contents;
     }
     
@@ -19,11 +20,11 @@ public class mainClass {
     }
     
     
-    public static void main(String args[]) {
+    public static void main(String args) {
     	EsempioTesto testo = new EsempioTesto("Sono io");
     	
     	PopUpDecorator pop = new PopUpDecorator(testo);
-    	mainClass me = new mainClass(pop);
+    	MainClass me = new MainClass(pop);
     	me.operazione();
     	
     }

@@ -1,5 +1,6 @@
+package esamePackage;
 
-public class EsempioTesto extends ComponentInterface{
+public class EsempioTesto implements ComponentInterface{
 private String text;
 	
 	public EsempioTesto(String text){

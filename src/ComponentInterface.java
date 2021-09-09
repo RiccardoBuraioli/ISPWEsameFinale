@@ -1,5 +1,6 @@
+package esamePackage;
 
-public abstract class ComponentInterface {
+public interface ComponentInterface {
 	public abstract String draw();
 
 }

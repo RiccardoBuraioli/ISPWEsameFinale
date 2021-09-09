@@ -1,5 +1,6 @@
+package esamePackage;
 
-public class Decorator extends ComponentInterface {
+public class Decorator implements ComponentInterface {
 private ComponentInterface component;
 	
 	public Decorator( ComponentInterface component){
@@ -8,8 +9,7 @@ private ComponentInterface component;
 	
 	@Override
 	public String draw() {
-		String resultsFromRedirection = this.component.draw(); 
-		return resultsFromRedirection;
+		return this.component.draw();
 	}
 
 }
